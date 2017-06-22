@@ -1,2 +1,0 @@
->>> abc="some string"
->>> abc
