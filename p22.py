@@ -8,14 +8,7 @@ print(movies)
 
 for each_item in movies:
     if isinstance(each_item, list):
-<<<<<<< HEAD
-        for nasted_item in each_item:
+        for nested_item in each_item:
             print(nasted_item)
     else:
         print(each_item)
-=======
-         for nasted_item in each_item
-             pirnt(nasted_item)
-    else:
-         print(each_item)
->>>>>>> master
