@@ -9,9 +9,9 @@ def print_lol(the_list, indent = False, level):
 # #選擇多行然後 command + / 就可以幫多行加＃ 
     for each_item in the_list:
         if isinstance(each_item, list):
-            print_lol(each_item, indent, leve+l)
+            print_lol(each_item, indent, level+l)
         else:
-            if intent:
+            if indent:
                 for tab_stop in range(level):
                 #可被改寫成print("\t"*level, end=")
                     print("\t", end="")
