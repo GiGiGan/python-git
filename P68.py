@@ -1,6 +1,6 @@
 # """This is the "P30.py" module,and it provides one function called
 # print_lol() which prints lists that may or may not include nested lists."""
-def print_lol(the_list, indent = False, level):
+def print_lol( the_list, level, indent = False):
 # # This function takes a postional argument called "the_list", which is any
 # # Python list(of, possibly, nested list.). Each data item in the provided list 
 # # is (recursively) printed to the screen on its owe line
@@ -9,7 +9,7 @@ def print_lol(the_list, indent = False, level):
 # #選擇多行然後 command + / 就可以幫多行加＃ 
     for each_item in the_list:
         if isinstance(each_item, list):
-            print_lol(each_item, indent, level+l)
+            print_lol(each_item, level+l, indent)
         else:
             if indent:
                 for tab_stop in range(level):
