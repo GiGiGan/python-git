@@ -4,7 +4,7 @@ try:
 
     print(man, file=man_file)
     print(other, file=other_file)
- except IOError as err:
+except IOError as err:
      print('File error: ' + str(err))
 finally:
     if 'man_file' in locals():
